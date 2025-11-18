@@ -8,25 +8,22 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{11A8DD76-328B-46DF-9F39-F559912D0360};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>0a151f09-81de-43b0-a61b-d35cb8789b32</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>144176c1-c208-41c2-abc2-4f5a6bd92377</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
-    <RootNamespace>ESP32ControlApp</RootNamespace>
-    <AssemblyName>ESP32ControlApp</AssemblyName>
+    <RootNamespace>MqttConnections</RootNamespace>
+    <AssemblyName>MqttConnections</AssemblyName>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib">
       <HintPath>..\..\packages\nanoFramework.CoreLibrary.1.17.11\lib\mscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="nanoFramework.DependencyInjection">
-      <HintPath>..\..\packages\nanoFramework.DependencyInjection.1.1.32\lib\nanoFramework.DependencyInjection.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
